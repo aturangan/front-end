@@ -163,9 +163,11 @@ body {
 /* my addition */
 
 .cover-container {
-  background-color: #F0BA0A; 
-  height: 500px;
+  background-color: #ffbf00; 
+  border-radius: 12px;
+  height: 480px;
   width: 350px; 
+  font: sans-serif;
 
   /* centered for all browsers */
   position: absolute;
@@ -180,10 +182,58 @@ body {
   padding-top: 35px;
 }
 
+.cover-heading {
+  font-size: 7.0em;
+  margin-top: 0;
+  text-shadow: 4px 4px #e6b800;
+}
+
 .msg {
-  color: #994d00
+  color: #994d00;
 }
 
 .error {
   font-size: 2.0em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+.bright {
+  color: #ffd633;
+}
+
+.form-group {
+  color: red;
+}
+
+.yellow {
+  background-color: #ffd633;
+}
+
+hr {
+  border-color: #cca300; 
+}
+
+.line {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #cca300; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+}
+
+.line span { 
+  background: #ffbf00; 
+  padding:0 10px; 
+}
+
+.or {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+a {
+  box-shadow: 5px 5px 2px #cca300;
+}
+
+
