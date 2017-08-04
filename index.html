@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Ian Yates">
+    <meta name="author" content="Alana Turangan">
     <link rel="shortcut icon" href="favicon.ico">
 
     <title>404</title>
@@ -30,11 +30,11 @@
         <div class="cover-container">
 
           <div class="inner cover">
-            <h1>E R R O R</h1>
+            <h1 class="msg error">E R R O R</h1>
             <h1 class="cover-heading">404</h1>
 
-            <p class="lead">Sorry, the page you were looking for doesn't exist.</p>
-            <p>Try searching for the page here:</p>
+            <p class="lead msg">Sorry, the page you were looking for doesn't exist.</p>
+            <p class="msg">Try searching for the page here:</p>
             
             <form class="form-inline form-search" role="form">
               <div class="form-group">
@@ -44,15 +44,16 @@
                 <label class="sr-only" for="searchInput">Search</label>
                 <input type="search" class="form-control" id="searchInput">
               </div>
-              <button type="submit" class="btn btn-default">Search</button>
+              <button type="submit" class="btn btn-default msg">Search</button>
             
             </form>
-          </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p> the html file works! </p>
-            </div>
+            <p class="msg">Or</p>
+
+            <a href="#" class="btn btn-primary tip" title="Back">Back</a>
+            <a href="#" class="btn btn-primary tip" title="Home">Home</a>
+            <a href="#" class="btn btn-primary tip" title="Contact">Contact Us</a>
+
           </div>
 
         </div>
@@ -64,5 +65,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        $('.tip').tooltip(); 
+      });
+    </script>
   </body>
 </html>
